@@ -43,8 +43,8 @@ for(let i = 0; i < numbers.length; i++){
 console.log(`Last odd number ${lastOddNumber}`)
 
 // Task 4. Summ first and last number
-const first = array[0]
-const last = array[array.length - 1]
+const first = numbers[0]
+const last = numbers[numbers.length - 1]
 const summ = first + last
 console.log(summ)
 
