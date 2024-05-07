@@ -22,3 +22,7 @@
 .card .face{
     display: none;
 }
+
+.win{
+    opacity: .2;
+}

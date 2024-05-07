@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+    let firstCardUrl = '';
+    let firstCard;
     const cards = document.getElementsByClassName('card');
 
     for (let i = 0; i < cards.length; i++) {
@@ -30,9 +31,29 @@ document.addEventListener("DOMContentLoaded", function () {
         const face = card.querySelector('.face');
         face.style.display = 'block'
         face.classList.add('active');
+
+        if (firstCardUrl == '') {
+            firstCardUrl = face.getAttribute('src')
+            firstCard = card;
+        } else {
+            const currentCardUrl = face.getAttribute('src');
+
+            if (firstCardUrl == currentCardUrl) {
+                firstCard.classList.add('win');
+                card.classList.add('win');
+            } else {
+                setTimeout(
+                    function () {
+                        showCover(firstCard);
+                        showCover(card);
+                    },
+                    2 * 1000);
+            }
+        }
     }
 
     function showCover(card) {
+        firstCardUrl = '';
         const cover = card.querySelector('.cover');
         cover.style.display = 'block'
         cover.classList.add('active');
