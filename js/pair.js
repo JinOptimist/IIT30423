@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (firstCardUrl == currentCardUrl) {
                 firstCard.classList.add('win');
                 card.classList.add('win');
+                firstCardUrl = '';
             } else {
                 setTimeout(
                     function () {
