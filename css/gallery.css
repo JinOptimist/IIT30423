@@ -1,0 +1,23 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
+
+#bottomContainer{
+    background-color: bisque;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    position: absolute;
+    /* transition: all 2s; */
+}
+.image img{
+    /* transition: all 2s; */
+}
