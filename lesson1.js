@@ -25,15 +25,15 @@ let user2 = {
 	name: 'Ivan',
 	age: 25,
 	isWoman: false,
-	adress: {
+	address: {
 		street: 'Push',
 		house: 50,
-		flate: 77
+		flat: 77
 	}
 }
 
 user1.name = 'Lera'
-user2.adress.house
+user2.address.house
 
 user1.secondName = 'Ivanov'
 
