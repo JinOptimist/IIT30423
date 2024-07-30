@@ -1,0 +1,21 @@
+.carusel{
+    display: flex;
+}
+
+.carusel div{
+    width: 100px;
+}
+.carusel div{
+    transition: all 1s;
+}
+
+.carusel img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.carusel .block1,
+.carusel .block5{
+    width: 0;
+    overflow: hidden;
+}
